@@ -1,5 +1,22 @@
 body {
   background-color: #f0f0f0;
-  background-image: url('https://t3.ftcdn.net/jpg/06/76/33/36/360_F_676333620_Gg6VrihsrlOEIsvO281ny8Pi1V1HLvlO.jpg');
-  background-size: 75%;
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/93/89/108/anime-japanese-art-uzumaki-naruto-naruto-shippuuden-wallpaper-preview.jpg');
+  background-size: cover;
+  background-repeat: none;
+}
+.container{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background: linear-gradient(45deg, #5c40f8, #4538be);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(160, 145, 202, 0.822);
+  max-width: 300px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+h1{
+  color:#f0f0f0;
 }

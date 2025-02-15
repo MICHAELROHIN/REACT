@@ -1,25 +1,38 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css' 
 
-function App() {
-  const containerStyle = {
-    display: 'flex',
-    justifyContent: 'center', 
-    alignItems: 'center', 
-    height: '100vh',
-    fontSize: '100px', 
-    color: 'WHITE',
-};
+function App() { 
+  let name = "Michael Rohin"
+  
+  const mydetails={  
+    name: "MICHAEL ROHIN",
+    age: 20,
+    dept: "M.Tech Computer Science And Engineering"
+  }
+  
+  alert(`My Name ${mydetails.name}`)
+  console.log(`Age is ${mydetails.age}`)
 
-return (
-  <div style={containerStyle}>
-      <p>
-          MICHAEL ROHIN
+
+  return ( 
+    
+    <>
+      <h1 style={{textAlign:"center"}}>{mydetails.dept}</h1>  {/*inline style*/} 
+      
+      {/* <h1 style={rStyle}>Rohin</h1> 
+       internal style  */}
+      {/* <h1>{mydetails.name}</h1> */}
+      {/* <p>my name is {name}</p> */}
+      <p className='container'>Name: {mydetails.name}<br/>  {/* external css */}
+      
+        Age: {mydetails.age}<br/>
+        Department: {mydetails.dept}<br/>
       </p>
-  </div>
+    </>
   )
 }
 
 export default App
+
