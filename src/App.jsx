@@ -8,14 +8,16 @@ function App() {
   // => arrow function
   
   const mydetails={  //const is the keyword
-    name: "MICHAEL ROHIN",
+    name: "Hi, Hello Vanakkam",
     age: 18,
     dept: "M.Tech Computer Science And Engineering",
   }
   
-  alert(`My Name ${mydetails.name}`)
+  alert(`${mydetails.name}`)
   console.log(`Age is ${mydetails.age}`)
-
+const michael=()=>{
+  console.log("Our department is best");
+}
 
   return ( 
     
@@ -31,6 +33,9 @@ function App() {
         Age: {mydetails.age}<br/>
         Department: {mydetails.dept}<br/>
       </p>
+    <button onClick={App}>Please click me</button>
+     <button onClick={michael}>hi, click me</button>
+     <button onClick={()=>console.log("Naan dhan da Leo")}>yellarukkum vanakkom</button>
     </>
   )
 }
