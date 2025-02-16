@@ -9,7 +9,7 @@ function App() {
   
   const mydetails={  //const is the keyword
     name: "MICHAEL ROHIN",
-    age: 20,
+    age: 18,
     dept: "M.Tech Computer Science And Engineering",
   }
   
