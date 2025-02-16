@@ -5,11 +5,12 @@ import './App.css'
 
 function App() { 
   let name = "Michael Rohin"
+  // => arrow function
   
-  const mydetails={  
+  const mydetails={  //const is the keyword
     name: "MICHAEL ROHIN",
     age: 20,
-    dept: "M.Tech Computer Science And Engineering"
+    dept: "M.Tech Computer Science And Engineering",
   }
   
   alert(`My Name ${mydetails.name}`)
