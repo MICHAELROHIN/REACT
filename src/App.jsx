@@ -4,14 +4,14 @@ import viteLogo from '/vite.svg'
 import Comp1 from './Comp1.jsx'
 
 function App() { 
-  const myInfo = {
+  const mydetails = {
     name1: "Michael Rohin",
     age1: 20,
     secId: "SEC23CJ029",
     department: "M.Tech CSE"
   };
 
-  const himInfo = {
+  const frienddetails = {
     name2: "MUGILAN",
     age2: 20,
     secId2: "SEC23CJ042",
@@ -36,12 +36,12 @@ function App() {
         <div>
           <h1 style={{ fontSize: "30px", textAlign: "center", color: "white", fontStyle: "italic" }}>Me</h1>
           <p style={{ fontSize: "30px", textAlign: "center", color: "white", fontStyle: "italic"}}>
-          <Comp1 name={myInfo.name1} age={myInfo.age1} secId={myInfo.secId} department={myInfo.department} />
+          <Comp1 name={mydetails.name1} age={mydetails.age1} secId={mydetails.secId} department={mydetails.department} />
           </p>
           
           <h1 style={{ fontSize: "30px", textAlign: "center", color: "White", fontStyle: "italic" }}>My Friend</h1>
           <p style={{ fontSize: "30px", textAlign: "center", color: "white", fontStyle: "italic"}}>
-          <Comp1 name={himInfo.name2} age={himInfo.age2} secId={himInfo.secId2} department={himInfo.department2} />
+          <Comp1 name={frienddetails.name2} age={frienddetails.age2} secId={frienddetails.secId2} department={frienddetails.department2} />
           </p>
         </div>
         
