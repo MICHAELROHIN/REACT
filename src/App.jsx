@@ -1,52 +1,31 @@
-import { useState } from 'react' // use state is the changing the state
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Comp1 from './Comp1.jsx'
+import React, { useState } from "react";
+import "./App.css"
 
-function App() { 
-  const mydetails = {
-    name1: "Michael Rohin",
-    age1: 20,
-    secId: "SEC23CJ029",
-    department: "M.Tech CSE"
-  };
+const Background = () => {
+  const [bgColour, setBgColour] = useState("#ffffff");
 
-  const frienddetails = {
-    name2: "MUGILAN",
-    age2: 20,
-    secId2: "SEC23CJ042",
-    department2: "M.Tech CSE"
+  const changingColour = (color) => {
+    setBgColour(color);
   };
 
   return (
-    <>
-      <div 
-        className='container'
-        style={{
-          backgroundImage: "url('https://miro.medium.com/v2/resize:fit:1400/0*9I-5BaHDOZRMdgD9.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          minHeight: "100vh",
-          padding: "20px"
-        }}
-      >
-        <h1 style={{ textAlign: "center", color: "darkred" }}>Friends Forever</h1>
-        <div>
-          <h1 style={{ fontSize: "30px", textAlign: "center", color: "white", fontStyle: "italic" }}>Me</h1>
-          <h4 style={{ fontSize: "30px", textAlign: "center", color: "white", fontStyle: "italic"}}>
-          <Comp1 name={mydetails.name1} age={mydetails.age1} secId={mydetails.secId} department={mydetails.department} />
-          </h4>
-          <h1 style={{ fontSize: "30px", textAlign: "center", color: "White", fontStyle: "italic" }}>My Friend</h1>
-          <h4 style={{ fontSize: "30px", textAlign: "center", color: "white", fontStyle: "italic"}}>
-          <Comp1 name={frienddetails.name2} age={frienddetails.age2} secId={frienddetails.secId2} department={frienddetails.department2} />
-          </h4>
-        </div>
-        
-        <button onClick={() => alert("Vanakkam!")}>Click</button>
-        <button onDoubleClick={() => alert("I am the king of the Indian Ocean!")}>Double Click Me</button>
-      </div>
-    </>
-  );
-}
+    <div
+      style={{ backgroundColor: bgColour, height: "100vh", padding: "20px", textAlign: "center"}}
+    >
+      <h2 className="text-2xl font-bold text-black mb-6">Change Background Color</h2>
 
-export default App;
+    
+      <div className="fixed bottom-0 left-0 w-full p-6 bg-gradient-to-t from-white to-gray-100 shadow-lg rounded-t-2xl flex flex-wrap justify-center gap-4">
+        <button onClick={() => changingColour("#3D8D7A")} className="big-btn">Light Green</button>
+        <button onClick={() => changingColour("#B3D8A8")} className="big-btn">Teal</button>
+        <button onClick={() => changingColour("#3F4F44")} className="big-btn">Grey</button>
+        <button onClick={() => changingColour("#001A6E")} className="big-btn">Dark Blue</button>
+        <button onClick={() => changingColour("#009990")} className="big-btn">Light Blue</button>
+        <button onClick={() => changingColour("#E52020")} className="big-btn">Red</button>
+        <button onClick={() => changingColour("#ffffff")} className="big-btn">Reset</button>
+      </div>
+    </div>
+  );
+};
+
+export default Background;

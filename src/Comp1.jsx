@@ -9,8 +9,7 @@ const Comp1 = (props) => {
         {props.age1}
         {props.secId}<br />
         {props.department}
-      </h3>
-      <h3>
+
         {props.name2}
         {props.age2}
         {props.secId2}<br />
