@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react' // use state is the changing the state
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Comp1 from './Comp1.jsx'
@@ -31,18 +31,15 @@ function App() {
         }}
       >
         <h1 style={{ textAlign: "center", color: "darkred" }}>Friends Forever</h1>
-        <br />
-
         <div>
           <h1 style={{ fontSize: "30px", textAlign: "center", color: "white", fontStyle: "italic" }}>Me</h1>
-          <p style={{ fontSize: "30px", textAlign: "center", color: "white", fontStyle: "italic"}}>
+          <h4 style={{ fontSize: "30px", textAlign: "center", color: "white", fontStyle: "italic"}}>
           <Comp1 name={mydetails.name1} age={mydetails.age1} secId={mydetails.secId} department={mydetails.department} />
-          </p>
-          
+          </h4>
           <h1 style={{ fontSize: "30px", textAlign: "center", color: "White", fontStyle: "italic" }}>My Friend</h1>
-          <p style={{ fontSize: "30px", textAlign: "center", color: "white", fontStyle: "italic"}}>
+          <h4 style={{ fontSize: "30px", textAlign: "center", color: "white", fontStyle: "italic"}}>
           <Comp1 name={frienddetails.name2} age={frienddetails.age2} secId={frienddetails.secId2} department={frienddetails.department2} />
-          </p>
+          </h4>
         </div>
         
         <button onClick={() => alert("Vanakkam!")}>Click</button>

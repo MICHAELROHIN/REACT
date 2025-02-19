@@ -5,14 +5,14 @@ const Comp1 = (props) => {
     <>
     <div>
       <h3>
-        {props.name1}<br />
-        {props.age1}<br />
+        {props.name1}
+        {props.age1}
         {props.secId}<br />
         {props.department}
       </h3>
       <h3>
-        {props.name2}<br />
-        {props.age2}<br />
+        {props.name2}
+        {props.age2}
         {props.secId2}<br />
         {props.department2}
       </h3>
