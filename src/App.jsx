@@ -1,31 +1,24 @@
-import React, { useState } from "react";
-import "./App.css"
+import React from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+import StudentForm from './pages/StudentForm';
+import Feedback from './pages/Feedback';
 
-const Background = () => {
-  const [bgColour, setBgColour] = useState("#ffffff");
-
-  const changingColour = (color) => {
-    setBgColour(color);
-  };
-
+const App = () => {
   return (
-    <div
-      style={{ backgroundColor: bgColour, height: "100vh", padding: "20px", textAlign: "center"}}
-    >
-      <h2 className="text-2xl font-bold text-black mb-6">Change Background Color</h2>
+    <div>
+      <nav className="nav">
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/student-form">Student Form</Link></li>
+        </ul>
+      </nav>
 
-    
-      <div className="fixed bottom-0 left-0 w-full p-6 bg-gradient-to-t from-white to-gray-100 shadow-lg rounded-t-2xl flex flex-wrap justify-center gap-4">
-        <button onClick={() => changingColour("#3D8D7A")} className="big-btn">Light Green</button>
-        <button onClick={() => changingColour("#B3D8A8")} className="big-btn">Teal</button>
-        <button onClick={() => changingColour("#3F4F44")} className="big-btn">Grey</button>
-        <button onClick={() => changingColour("#001A6E")} className="big-btn">Dark Blue</button>
-        <button onClick={() => changingColour("#009990")} className="big-btn">Light Blue</button>
-        <button onClick={() => changingColour("#E52020")} className="big-btn">Red</button>
-        <button onClick={() => changingColour("#ffffff")} className="big-btn">Reset</button>
-      </div>
+      <Routes>
+        <Route path="/" element={<Feedback />} />
+        <Route path="/student-form" element={<StudentForm />} />
+      </Routes>
     </div>
   );
 };
 
-export default Background;
+export default App;

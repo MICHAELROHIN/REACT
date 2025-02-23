@@ -1,14 +1,55 @@
-.big-btn {
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+  background-color: #0d3735;
+  background-image: url('https://edu.ieee.org/in-sairam-ap/wp-content/uploads/sites/1138/banner.jpg');
+  background-repeat: no-repeat;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background: rgb(48, 213, 185);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #020202;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button {
   padding: 15px 25px;
   font-size: 18px;
-  font-weight: bold;
-  background: white;
-  color: black;
-  border-radius: 10px;
+  font-weight: semi-bold;
+  background: rgb(237, 5, 25);
+  color: rgb(251, 248, 248);
+  border-radius: 8px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 6px rgba(15, 12, 225, 0.1);
 }
-.big-btn:hover {
+
+.button:hover {
   transform: scale(1.05);
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+.heading{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+}
+.feedback{
+  font-weight: semi-bold;
+  color: rgb(161, 19, 19);
+  
 }
